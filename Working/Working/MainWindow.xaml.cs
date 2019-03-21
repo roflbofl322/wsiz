@@ -20,8 +20,20 @@ namespace Working
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
+    /// 
+   
     public partial class MainWindow : Window
     {
+         string[] commands = new string[]
+    {
+        "get-process"
+        ,"get-service"
+        ,"get-command"
+        ,"get-hotfix"
+        ,"get-psdrive"
+        ,"get-netadapter"
+
+    };
         public MainWindow()
         {
             InitializeComponent();
