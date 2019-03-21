@@ -10,6 +10,7 @@
         <Button x:Name="btnDisplay" Content="Display" HorizontalAlignment="Left" Margin="707,234,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
         <RadioButton x:Name="rdbtGetProcess" Content="Get-Process" HorizontalAlignment="Left" Margin="10,160,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txtOutput" HorizontalAlignment="Left" Height="150" Margin="10,259,0,0" TextWrapping="Wrap" Text="Output" VerticalAlignment="Top" Width="772" ScrollViewer.CanContentScroll="True" HorizontalScrollBarVisibility="Visible" VerticalScrollBarVisibility="Visible"/>
+        <ComboBox x:Name="cmb_btn_select_command" HorizontalAlignment="Left" Margin="209,160,0,0" VerticalAlignment="Top" Width="354" Height="15" SelectionChanged="ComboBox_SelectionChanged"/>
 
     </Grid>
 </Window>
