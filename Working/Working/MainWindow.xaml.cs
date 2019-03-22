@@ -26,12 +26,12 @@ namespace Working
     {
          string[] commands = new string[]
     {
-        "get-process"
-        ,"get-service"
-        ,"get-command"
-        ,"get-hotfix"
-        ,"get-psdrive"
-        ,"get-netadapter"
+        "Get-Process"
+        ,"Get-Service"
+        ,"Get-Command"
+        ,"Get-Hotfix"
+        ,"Get-Psdrive"
+        ,"Get-Netadapter"
 
     };
         public MainWindow()
@@ -42,7 +42,7 @@ namespace Working
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             PowerShell objPowerShell = PowerShell.Create();
-
+            /*
             if (rdbtGetProcess.IsChecked == true)
             {
                 objPowerShell.AddCommand("get-process");
@@ -53,12 +53,27 @@ namespace Working
                 }
 
             }
+            */
 
         }
 
         private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
+        }
+
+        private void Cmb_btn_select_command_DropDownOpened(object sender, EventArgs e)
+        {
+           
+
+        }
+
+        private void Cmb_btn_select_command_Loaded(object sender, RoutedEventArgs e)
+        {
+            foreach (string command in commands)
+            {
+                cmb_btn_select_command.Items.Add(command);
+            }
         }
     }
 }
