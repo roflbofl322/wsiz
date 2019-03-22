@@ -9,7 +9,8 @@
     <Grid>
         <Button x:Name="btnDisplay" Content="Display" HorizontalAlignment="Left" Margin="707,234,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
         <TextBox x:Name="txtOutput" HorizontalAlignment="Left" Height="150" Margin="10,259,0,0" TextWrapping="Wrap" Text="Output" VerticalAlignment="Top" Width="772" ScrollViewer.CanContentScroll="True" HorizontalScrollBarVisibility="Visible" VerticalScrollBarVisibility="Visible"/>
-        <ComboBox x:Name="cmb_btn_select_command" HorizontalAlignment="Left" Margin="209,160,0,0" VerticalAlignment="Top" Width="350" Height="23" SelectionChanged="ComboBox_SelectionChanged" Loaded="Cmb_btn_select_command_Loaded" />
+        <ComboBox x:Name="cmb_btn_select_command" HorizontalAlignment="Left" Margin="209,160,0,0" VerticalAlignment="Top" Width="350" Height="23" SelectionChanged="ComboBox_SelectionChanged" Loaded="Cmb_btn_select_command_Loaded"  />
+        <TextBox x:Name="testOtput" HorizontalAlignment="Left" Height="70" Margin="123,42,0,0" TextWrapping="Wrap" Text="Test Output" VerticalAlignment="Top" Width="180"/>
 
     </Grid>
 </Window>

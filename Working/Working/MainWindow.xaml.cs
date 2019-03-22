@@ -42,30 +42,30 @@ namespace Working
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             PowerShell objPowerShell = PowerShell.Create();
-            /*
-            if (rdbtGetProcess.IsChecked == true)
-            {
-                objPowerShell.AddCommand("get-process");
+            
+                
+                objPowerShell.AddCommand(cmb_btn_select_command.SelectedItem.ToString());
                 Collection<PSObject> results = objPowerShell.Invoke();
                 foreach (PSObject result in results)
                 {
-                    txtOutput.Text += result + "\n";
+                    txtOutput.Text += result + "\n" ;
                 }
+                
 
-            }
-            */
+            
+            
 
         }
 
         private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-
+           // Item m = cmb_btn_select_command.SelectedItem;
+            
         }
 
         private void Cmb_btn_select_command_DropDownOpened(object sender, EventArgs e)
         {
            
-
         }
 
         private void Cmb_btn_select_command_Loaded(object sender, RoutedEventArgs e)
@@ -74,6 +74,11 @@ namespace Working
             {
                 cmb_btn_select_command.Items.Add(command);
             }
+        }
+
+        private void TestOtput_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
         }
     }
 }
